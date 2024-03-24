@@ -1,22 +1,15 @@
 import dash
-from dash import html, dcc, callback, Input, Output
+from dash import Dash, html, dcc, callback, Input, Output
 
-app = dash.Dash(__name__)
+app = Dash(__name__,pages_folder="pages",use_pages=True)
 
 
 app.layout = html.Div(children=[
-    html.Div(className="background", children=[
-        html.Div(className="home-page", children=[
-            html.Div(className="title-buttons", children=[
-                html.H2(className="home-title", children="Autodiagnóstico: Dependencias e impactos"),
-                html.Div(className="home-buttons", children=[
-                    html.Button(className="btn-comenzar", children="Comenzar"),
-                    html.Button(className="btn-informacion", children="Información")
-                ])
-            ]),
-            html.Img(className="home-image", src="assets/home-image.jpg")
-        ])
-    ])
+    # html.Div(children=[
+	#     dcc.Link(page['name'], href=page["relative_path"], className="btn btn-dark m-2 fs-5")\
+	# 		  for page in dash.page_registry.values()]
+	# ),
+	dash.page_container
 ])
 
 if __name__ == '__main__':

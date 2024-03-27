@@ -15,7 +15,7 @@ layout = html.Div(children=[
                     # html.Button(className="btn-informacion", children="Información", id="open", n_clicks=0),
                 ])
             ]),
-            html.Img(className="home-image", src="assets/home-image.jpg")
+            html.Img(className="home-image", src="assets/imagenes/home-image.jpg")
         ])
     ])
 ])

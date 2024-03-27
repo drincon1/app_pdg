@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Árbol de decisión</title>
+    <link rel="stylesheet" href="../assets/arbol_decision.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="ad-layout">
+            <div class="panel-control">
+                <label for="ciiu">Código CIIU</label>
+                <input class="input-ciiu" id="ciiu" type="number" placeholder="####">
+                <label for="sectores">Sector(es)</label>
+                <div class="select-sectores">
+                    <input type="checkbox" id="manufactura">
+                    <label class="label-sector" for="manufactura">Manufactura</label><br>
+                </div>
+                <label>Sub-Sector(es)</label>
+                <div class="select-subsectores">
+                    <input type="checkbox" id="carbon">
+                    <label class="label-subsector" for="carbon">Operaciones de carbón</label><br>
+                    <input type="checkbox" id="materiales-construccion">
+                    <label class="label-subsector" for="materiales-construccion">Materiales de construcción</label><br>
+                    <input type="checkbox" id="siderurgia">
+                    <label class="label-subsector" for="siderurgia">Siderurgía</label><br>
+                    <input type="checkbox" id="mineria">
+                    <label class="label-subsector" for="mineria">Metales y Minería</label><br>
+                </div>
+
+                <button>Buscar</button>
+            </div>
+            <div class="categorias">
+                <div class="seleccion-categoria">
+                    <button class="btn-ctg">Ecosistema</button>
+                    <button class="btn-ctg">Servicios Ecosistémicos</button>
+                    <button class="btn-ctg">Especies</button>
+                </div>
+                <div class="elementos-categoria">
+                    <div class="elemento">
+                        <h4 class="elemento-imagen">
+                            A
+                        </h4>
+                        <div class="elemento-informacion">
+                            <div class="titulo-botones">
+                                <h3 class="elemento-titulo">
+                                    Materias primas
+                                </h3>
+                                <button class="btn-add"> <img src="../assets/add.png" alt="+"> </button>
+                                <button class="btn-info"> <img src="../assets/information.png" alt="i">
+                                </button>
+                            </div>
+                            <div class="elemento-descripcion">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et lorem ut lorem
+                                tincidunt
+                                tempus. Aenean eleifend ultricies leo sit amet efficitur.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

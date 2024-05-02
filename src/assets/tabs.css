@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+Div {
+  font-family: 'Plus Jakarta Sans';
+}
+
+/*
+  Ubicado en tabmenu.py 
+  Contiene a .main-display y .button-display
+*/
+.container {
+  border: 1px black solid;
+  background-color: lightslategray;
+}
+
+/*
+  Ubicado en todos los archivos (incluido tabmenu.py)
+  Contiene los elementos por etapa de la estrategia
+*/
+.main-display {
+  height: 600px;
+  background-color: lightcoral;
+}
+
+.page-title {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+/*
+  Ubicado solamente en tabmenu.py
+  Boton para continuar a la siguiente etapa en la estrategia
+*/
+.button-display {
+  display: flex;
+  /* justify-content: end; */
+  justify-content: start;
+}
+
+.btn-next-tab {
+  border-radius: 50px;
+}

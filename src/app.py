@@ -1,16 +1,14 @@
 import dash
 from dash import Dash, html, dcc, callback, Input, Output
+import dash_bootstrap_components as dbc
 
-app = Dash(__name__,pages_folder="pages",use_pages=True)
+app = Dash(__name__,pages_folder="pages",use_pages=True,suppress_callback_exceptions=True)
 
 
 app.layout = html.Div(children=[
-    # html.Div(children=[
-	#     dcc.Link(page['name'], href=page["relative_path"], className="btn btn-dark m-2 fs-5")\
-	# 		  for page in dash.page_registry.values()]
-	# ),
 	dash.page_container
 ])
+
 
 if __name__ == '__main__':
     app.run_server(debug=True)

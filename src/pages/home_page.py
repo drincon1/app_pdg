@@ -8,7 +8,7 @@ layout = html.Div(children=[
     html.Div(className="background", children=[
         html.Div(className="home-page", children=[
             html.Div(className="title-buttons", children=[
-                html.H2(className="home-title", children="Autodiagnóstico: Dependencias e impactos"),
+                html.H2(className="home-title", children="Autodiagnóstico: Dependencias e impactos sobre el agua como servicio ecosistémico"),
                 html.Div(className="home-buttons", children=[
                     html.Button(id="btn-comenzar", children="Comenzar"),
                     dcc.Location(id='url', refresh=True),

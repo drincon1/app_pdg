@@ -1,6 +1,6 @@
 import dash 
 from dash import html, dcc, Input,Output, State, callback, ALL
-from components import acc_decs,acceso_datos,cultura_eco,monitoreo,proceso,talento_humano
+from components import proceso
 
 dash.register_page(__name__)
 

@@ -26,9 +26,8 @@ layout = html.Div(children=[
 )
 def change_layout(n_clicks):
     if n_clicks is not None and n_clicks > 0:
-        # return '/arbol-decision'
-        # return '/tabmenu'
-        return '/indicadores'
+        # return '/indicadores'
+        return '/cuestionario'
     else:
         raise dash.exceptions.PreventUpdate
     

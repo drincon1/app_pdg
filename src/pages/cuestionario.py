@@ -3,7 +3,7 @@ import dash
 from dash import html, callback, Input, State, Output, dcc
 from dash.exceptions import PreventUpdate
 
-# preguntas = pd.read_csv("src/assets/recursos/preguntas.csv")
+preguntas = pd.read_csv("src/assets/preguntas.csv")
 print(preguntas)
 
 dash.register_page(__name__)
